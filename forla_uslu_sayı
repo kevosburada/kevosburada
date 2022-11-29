@@ -1,0 +1,19 @@
+package patika_odev_5;
+
+import java.util.Scanner;
+
+public class Patika_odev_5 {
+    public static void main(String[] args) {
+        //üslü sayı yapma
+        Scanner scan = new Scanner(System.in);
+        System.out.println("taban sayıyı giriniz : ");
+        int taban = scan.nextInt();
+        System.out.println("üs sayıyı giriniz : ");
+        int us = scan.nextInt();
+        int cevap =1;
+        for (int i = 1; i <= us ; i++) {
+            cevap = cevap*taban;
+        }
+        System.out.println(cevap);
+    }
+ }
