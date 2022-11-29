@@ -1,0 +1,22 @@
+Scanner scan = new Scanner(System.in);
+        System.out.println("n değerini giriniz : ");
+        int n  = scan.nextInt();
+        System.out.println("r değerini giriniz : ");
+        int r = scan.nextInt();
+        int faktn = 1;
+        int faktr = 1;
+        int payda = 1;
+        for (int i=1; i <=n; i++) {
+            faktn  = faktn*i;
+        }
+        System.out.println(faktn);
+        for (int j= 1; j <= r; j++) {
+            faktr = faktr*j;
+        }
+        System.out.println(faktr);
+        for (int k = 1; k <=n-r; k++) {
+            payda = payda*k;
+        }
+        System.out.println(payda);
+        int comb = faktn/(payda*faktr);
+        System.out.println(comb);
